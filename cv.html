@@ -3,41 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Alejandra Albino Escobar</title>
+    <title>CV Alejandra Albino - Réplica</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- ESTILOS CSS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #e0e0e0; /* Fondo gris para resaltar el "papel" */
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        /* Contenedor principal (Simulación de hoja A4) */
+        .cv-page {
+            background-color: #fff;
+            width: 850px;
+            min-height: 1100px;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        /* --- COLUMNA IZQUIERDA (SIDEBAR) --- */
+        .sidebar {
+            background-color: #f8e9e6; /* Color rosa pálido exacto */
+            width: 35%;
+            padding: 40px 25px;
+            color: #444;
+        }
+
+        .profile-container {
+            width: 190px;
+            height: 190px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 6px solid white;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-intro {
+            font-size: 13px;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .section-icon-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .icon-circle {
+            width: 35px;
+            height: 35px;
+            /* Aquí se insertan los iconos de la carpeta CV */
+        }
+
+        .sidebar-section h3 {
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            color: #333;
+        }
+
+        .sidebar-content p {
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .divider-dashed {
+            border-top: 1px dashed #b5a4a1;
+            margin: 20px 0;
+        }
+
+        .edu-item-sidebar {
+            margin-bottom: 15px;
+        }
+
+        .edu-item-sidebar h4 {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        /* --- COLUMNA DERECHA (MAIN) --- */
+        .main-content {
+            width: 65%;
+            padding: 60px 45px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 1;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-weight: 300;
+            font-style: italic;
+            color: #666;
+            font-size: 20px;
+        }
+
+        .header-hr {
+            border: 0;
+            border-top: 2px solid #333;
+            margin: 25px 0;
+        }
+
+        .main-section {
+            margin-bottom: 35px;
+        }
+
+        .main-section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .main-section-header h3 {
+            font-size: 18px;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            flex-grow: 1;
+            padding-bottom: 5px;
+        }
+
+        .main-section-header h3 span {
+            font-size: 12px;
+            color: #999;
+            font-weight: normal;
+        }
+
+        .section-body {
+            padding-left: 55px; /* Alineación con el texto del título */
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .exp-item {
+            margin-bottom: 20px;
+        }
+
+        .exp-item h4 {
+            font-size: 15px;
+            color: #000;
+        }
+
+        .exp-year {
+            font-weight: bold;
+            display: block;
+            margin: 3px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 18px;
+        }
+
+        .skills-grid {
+            list-style-type: disc;
+        }
+    </style>
 </head>
 <body>
-    <div class="cv-container">
-        <aside class="sidebar">
-            <div class="profile-img-container">
-                <img src="CV/foto.jpg" alt="Foto de Perfil" class="profile-img">
-            </div>
-            
-            <p class="sidebar-text">
-                Soy una persona responsable, organizada y comprometida con mis estudios... 
-                </p>
 
-            <section class="contact-section">
-                <h3><i class="fas fa-user"></i> CONTACTO</h3>
-                <p>Celular: (55) 9876-5432</p>
-                <p>Correo: alejandra.albino@email.com</p>
-                <p>Ixtlahuaca, Estado de México</p>
+    <div class="cv-page">
+        <aside class="sidebar">
+            <div class="profile-container">
+                <img src="CV/perfil.jpg" alt="Foto Alejandra" class="profile-img">
+            </div>
+
+            <p class="sidebar-intro">
+                Soy una persona responsable, organizada y comprometida con mis estudios. Me considero proactiva, con facilidad para trabajar en equipo y aprender rápidamente. Siempre busco mejorar mis habilidades y enfrentar nuevos retos que me permitan crecer tanto personal como profesionalmente.
+            </p>
+
+            <section class="sidebar-section">
+                <div class="section-icon-title">
+                    <img src="CV/usuario.png" class="icon-circle" alt="Icono Contacto">
+                    <h3>CONTACTO</h3>
+                </div>
+                <div class="sidebar-content">
+                    <p>Celular: (55) 9876-5432</p>
+                    <p>Correo: alejandra.albino@email.com</p>
+                    <p>Ixtlahuaca, Estado de México</p>
+                </div>
             </section>
 
-            <hr class="separator">
+            <div class="divider-dashed"></div>
 
-            <section class="education-sidebar">
-                <h3><i class="fas fa-graduation-cap"></i> EDUCACIÓN</h3>
-                <div class="edu-item">
-                    <strong>Preparatoria (en curso)</strong>
-                    <p>Área: Ciencias Sociales</p>
-                    <p>2022 - Presente</p>
+            <section class="sidebar-section">
+                <div class="section-icon-title">
+                    <img src="CV/graduacion.png" class="icon-circle" alt="Icono Educación">
+                    <h3>EDUCACIÓN</h3>
                 </div>
-                <div class="edu-item">
-                    <strong>Secundaria General</strong>
-                    <p>Certificado concluido, 2022</p>
+                <div class="sidebar-content">
+                    <div class="edu-item-sidebar">
+                        <h4>Preparatoria (en curso)</h4>
+                        <p>Área: Ciencias Sociales</p>
+                        <p>2022 – Presente</p>
+                    </div>
+                    <div class="edu-item-sidebar">
+                        <h4>Secundaria General</h4>
+                        <p>Certificado concluido, 2022</p>
+                    </div>
                 </div>
             </section>
         </aside>
@@ -45,54 +235,75 @@
         <main class="main-content">
             <header>
                 <h1>ALEJANDRA<br>ALBINO ESCOBAR</h1>
-                <p class="subtitle">Estudiante</p>
-                <hr class="header-line">
+                <h2>Estudiante</h2>
+                <hr class="header-hr">
             </header>
 
             <section class="main-section">
-                <h3><i class="fas fa-file-alt"></i> PERFIL</h3>
-                <p>Soy una persona responsable, organizada y comprometida con mis estudios. Me considero proactiva, con facilidad para trabajar en equipo y aprender rápidamente...</p>
-            </section>
-
-            <section class="main-section">
-                <h3><i class="fas fa-briefcase"></i> EDUCACIÓN <small>(BÁSICA / PRÁCTICAS)</small></h3>
-                <div class="experience-item">
-                    <strong>Apoyo Administrativo (Escolar)</strong>
-                    <span class="date">2024</span>
-                    <ul>
-                        <li>Organización de documentos y tareas escolares</li>
-                        <li>Apoyo en actividades administrativas básicas</li>
-                        <li>Trabajo en equipo para proyectos escolares</li>
-                    </ul>
+                <div class="main-section-header">
+                    <img src="CV/usuario.png" class="icon-circle" alt="Icono Perfil">
+                    <h3>PERFIL</h3>
                 </div>
-                <div class="experience-item">
-                    <strong>Ventas Informales (Temporal)</strong>
-                    <span class="date">2023</span>
-                    <ul>
-                        <li>Atención a clientes</li>
-                        <li>Manejo básico de dinero</li>
-                        <li>Promoción de productos</li>
-                    </ul>
+                <div class="section-body">
+                    <p>Soy una persona responsable, organizada y comprometida con mis estudios. Me considero proactiva, con facilidad para trabajar en equipo y aprender rápidamente. Siempre busco mejorar mis habilidades y enfrentar nuevos retos que me permitan crecer tanto personal como profesionalmente.</p>
                 </div>
             </section>
 
             <section class="main-section">
-                <h3><i class="fas fa-cog"></i> HABILIDADES</h3>
-                <ul>
-                    <li>Organización y responsabilidad</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Comunicación efectiva</li>
-                    <li>Manejo básico de computadora</li>
-                    <li>Redes sociales</li>
-                </ul>
+                <div class="main-section-header">
+                    <img src="CV/maletin.png" class="icon-circle" alt="Icono Trabajo">
+                    <h3>EDUCACIÓN <span>(BÁSICA / PRÁCTICAS)</span></h3>
+                </div>
+                <div class="section-body">
+                    <div class="exp-item">
+                        <h4>Apoyo Administrativo (Escolar)</h4>
+                        <span class="exp-year">2024</span>
+                        <ul>
+                            <li>Organización de documentos y tareas escolares</li>
+                            <li>Apoyo en actividades administrativas básicas</li>
+                            <li>Trabajo en equipo para proyectos escolares</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h4>Ventas Informales (Temporal)</h4>
+                        <span class="exp-year">2023</span>
+                        <ul>
+                            <li>Atención a clientes</li>
+                            <li>Manejo básico de dinero</li>
+                            <li>Promoción de productos</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <section class="main-section">
-                <h3><i class="fas fa-comments"></i> IDIOMAS</h3>
-                <p><strong>Español:</strong> Nativo</p>
-                <p><strong>Inglés:</strong> Básico</p>
+                <div class="main-section-header">
+                    <img src="CV/engrane.png" class="icon-circle" alt="Icono Habilidades">
+                    <h3>HABILIDADES</h3>
+                </div>
+                <div class="section-body">
+                    <ul class="skills-grid">
+                        <li>Organización y responsabilidad</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Comunicación efectiva</li>
+                        <li>Manejo básico de computadora</li>
+                        <li>Redes sociales</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <div class="main-section-header">
+                    <img src="CV/burbuja.png" class="icon-circle" alt="Icono Idiomas">
+                    <h3>IDIOMAS</h3>
+                </div>
+                <div class="section-body">
+                    <p><strong>Español:</strong> Nativo</p>
+                    <p><strong>Inglés:</strong> Básico</p>
+                </div>
             </section>
         </main>
     </div>
+
 </body>
 </html>
